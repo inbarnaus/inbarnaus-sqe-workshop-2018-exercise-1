@@ -31,7 +31,7 @@ const check2 = (parsed, table) =>{
         assignmentExpDecl(parsed.expression, table);
         break;
     case 'WhileStatement':
-        whileDecl(parsed.test, table);
+        whileDecl(parsed.test, table );
         check(parsed.body, table);
         break;
     case 'Literal':
